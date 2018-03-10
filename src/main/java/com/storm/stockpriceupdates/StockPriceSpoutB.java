@@ -23,11 +23,9 @@ public class StockPriceSpoutB extends BaseRichSpout {
 
 	@Override
 	public void nextTuple() {
-		while (true) {
-			for (int i = 0; i < stocks.length; i++) {
-				this.collector.emit(new Values(stocks[i], priceGenerator.nextFloat()));
-				Utils.sleep(500);
-			}
+		for (int i = 0; i < stocks.length; i++) {
+			this.collector.emit(new Values(stocks[i], priceGenerator.nextFloat()));
+			Utils.sleep(500);
 		}
 	}
 
