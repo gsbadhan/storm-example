@@ -2,4 +2,4 @@
 
 ## Even Odd numbers
 
-## Show changing Stock prices
+## Show Stock price updates

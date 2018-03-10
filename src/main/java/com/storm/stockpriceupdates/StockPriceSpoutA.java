@@ -1,5 +1,6 @@
-package com.storm.stockprice;
+package com.storm.stockpriceupdates;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -11,10 +12,10 @@ import org.apache.storm.tuple.Fields;
 import org.apache.storm.tuple.Values;
 import org.apache.storm.utils.Utils;
 
-public class StockPriceSpoutB extends BaseRichSpout {
+public class StockPriceSpoutA extends BaseRichSpout {
 	private SpoutOutputCollector collector;
 	private Random priceGenerator = new Random(10);
-	private String[] stocks = { "mgm", "yc", "abb", "tyc", "royl" };
+	private String[] stocks = { "cpa", "newX", "micr", "mng" };
 
 	@Override
 	public void open(Map conf, TopologyContext context, SpoutOutputCollector collector) {

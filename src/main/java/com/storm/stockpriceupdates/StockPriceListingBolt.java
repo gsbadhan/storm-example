@@ -1,4 +1,4 @@
-package com.storm.stockprice;
+package com.storm.stockpriceupdates;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

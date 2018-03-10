@@ -1,4 +1,4 @@
-package com.storm.stockprice;
+package com.storm.stockpriceupdates;
 
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
