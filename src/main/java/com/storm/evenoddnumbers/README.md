@@ -1,4 +1,4 @@
-# This sample will show, how to shuffle, count and group even-odd numbers 
+# This sample shows how to shuffle, count and group even-odd numbers 
 
 ## Run EvenOddCountTopology.class
 

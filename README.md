@@ -1,5 +1,5 @@
 # Apache Storm example
 
-## EvenOdd numbers
+## Even Odd numbers
 
-## Stock buy and sell orders
+## Show changing Stock prices
