@@ -14,7 +14,7 @@ product text,
 clicked counter,
 PRIMARY KEY (user_id,site_url,product));
 
-### start storm app and check in data in cassandra using below query:
+### start storm app and check data in cassandra using below query:
 ##### select * from products.user_product_profiling limit 100;
 ##### select * from products.user_product_profiling where user_id='johan' and site_url='amazon.com';
 ##### select * from products.user_product_profiling where user_id='johan';
