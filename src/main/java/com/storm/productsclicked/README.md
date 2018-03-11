@@ -1,9 +1,9 @@
-# This sample shows how to track stock price on intervals  
+# This sample shows user's product profiling across online web sites  
 
 ## Run ProductsClickedTopology.class
 		
 
-### cassandra database keyspace and table:
+### install Apache cassandra and create below keyspace and table:
 
 CREATE KEYSPACE IF NOT EXISTS products WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
 

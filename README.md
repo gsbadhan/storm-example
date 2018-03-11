@@ -6,4 +6,4 @@
 
 ## Stock buy/sell sentiments
 
-## Recommendations based on User visiting online site and clicking on various product 
+## User's profiling based on visiting online site and clicking on various product 
