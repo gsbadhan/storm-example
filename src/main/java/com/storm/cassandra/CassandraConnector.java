@@ -8,7 +8,7 @@ public class CassandraConnector {
 	private Cluster cluster;
 	private Session session;
 
-	public void connect(String node, Integer port) {
+	public CassandraConnector(String node, Integer port) {
 		Builder b = Cluster.builder().addContactPoint(node);
 		if (port != null) {
 			b.withPort(port);
@@ -21,8 +21,13 @@ public class CassandraConnector {
 		return this.session;
 	}
 
-	public void close() {
-		session.close();
-		cluster.close();
+	public void closeSession() {
+		if (session != null)
+			session.close();
+	}
+
+	public void closeCluster() {
+		if (cluster != null)
+			cluster.close();
 	}
 }

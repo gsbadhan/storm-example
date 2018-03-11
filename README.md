@@ -5,3 +5,5 @@
 ## Stock price updates
 
 ## Stock buy/sell sentiments
+
+## Recommendations based on User visiting online site and clicking on various product 
