@@ -3,6 +3,6 @@
 ## Run StockBuySellSentimentTopology.class
 		
 
-### Note: Its in-memory computation based, not storing to database. 
+### Note: Its in-memory computation based, not storing into database. 
 
 

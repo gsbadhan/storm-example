@@ -17,7 +17,7 @@ public class StockBuySellSentimentTopology {
 		Config config = new Config();
 		LocalCluster localCluster = new LocalCluster();
 		localCluster.submitTopology("StockBuySellSentimentTopology", config, builder.createTopology());
-		Utils.sleep(60 * 1000);
+		Utils.sleep(120 * 1000);
 		localCluster.killTopology("StockBuySellSentimentTopology");
 		localCluster.shutdown();
 	}

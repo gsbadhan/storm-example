@@ -13,7 +13,8 @@ import org.apache.storm.utils.Utils;
 
 public class StockBuySellSpout extends BaseRichSpout {
 	private SpoutOutputCollector collector;
-	private Random priceGenerator = new Random(10);
+	private Random buySellRandDecider = new Random(10);
+	private Random yesNoRandDecider = new Random(50);
 	private String[] stocks = { "cpa", "newX", "micr", "mng" };
 
 	@Override
@@ -24,17 +25,13 @@ public class StockBuySellSpout extends BaseRichSpout {
 	@Override
 	public void nextTuple() {
 		for (int i = 0; i < stocks.length; i++) {
-			int num = priceGenerator.nextInt();
-			if (num % 2 == 0)
-				if (num % 3 == 0)
-					this.collector.emit(new Values(stocks[i], "buy", "yes"));
-				else
-					this.collector.emit(new Values(stocks[i], "buy", "no"));
-			else if (num % 3 == 0)
-				this.collector.emit(new Values(stocks[i], "sell", "yes"));
-			else
-				this.collector.emit(new Values(stocks[i], "sell", "no"));
-			Utils.sleep(1);
+			String buyOrSell = "sell";
+			if (buySellRandDecider.nextInt() % 2 == 0)
+				buyOrSell = "buy";
+			String yesNo = "no";
+			if (yesNoRandDecider.nextInt() % 2 == 0)
+				yesNo = "yes";
+			this.collector.emit(new Values(stocks[i], buyOrSell, yesNo));
 		}
 	}
 

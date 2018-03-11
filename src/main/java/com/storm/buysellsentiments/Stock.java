@@ -14,9 +14,9 @@ public class Stock {
 
 	private int percentage(boolean isBuy) {
 		if (isBuy) {
-			return (buySell.buyCount / buySell.getTotal()) * 100;
+			return (int) ((buySell.buyCount / buySell.getTotal()) * 100);
 		} else {
-			return (buySell.sellCount / buySell.getTotal()) * 100;
+			return (int) ((buySell.sellCount / buySell.getTotal()) * 100);
 		}
 	}
 
@@ -26,10 +26,10 @@ public class Stock {
 	}
 
 	public static class BuySell {
-		private int buyCount;
-		private int sellCount;
+		private float buyCount;
+		private float sellCount;
 
-		public BuySell(int buyCount, int sellCount) {
+		public BuySell(float buyCount, float sellCount) {
 			super();
 			this.buyCount = buyCount;
 			this.sellCount = sellCount;
@@ -53,8 +53,8 @@ public class Stock {
 				--this.sellCount;
 		}
 
-		public int getTotal() {
-			int totl = buyCount + sellCount;
+		public float getTotal() {
+			float totl = buyCount + sellCount;
 			return totl <= 0 ? 1 : totl;
 		}
 

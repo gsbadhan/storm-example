@@ -2,6 +2,6 @@
 
 ## Even Odd numbers count and grouping
 
-## Show Stock price updates
+## Stock price updates
 
-## Show Stock buy/sell sentiments
+## Stock buy/sell sentiments
