@@ -1,4 +1,4 @@
-package com.storm.window.wordcount;
+package com.storm.window.numbersum;
 
 import java.util.Map;
 import java.util.Random;

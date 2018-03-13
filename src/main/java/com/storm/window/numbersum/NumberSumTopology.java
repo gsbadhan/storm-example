@@ -1,4 +1,4 @@
-package com.storm.window.wordcount;
+package com.storm.window.numbersum;
 
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
