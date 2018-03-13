@@ -7,3 +7,5 @@
 ## Stock buy/sell sentiments
 
 ## User's clicks profiling based on visiting online site and products 
+
+## Sum of incoming numbers within sliding-window [window]
